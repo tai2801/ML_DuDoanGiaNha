@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+*.pyc
+data/*.db
+models/*.keras
+outputs/charts/*.png
+.env

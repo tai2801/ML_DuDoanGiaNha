@@ -1,0 +1,19 @@
+# Cấu hình tái lập thí nghiệm HomePredict (đổi seed -> kết quả thay đổi có kiểm soát)
+seed: 42
+n_transactions: 3600
+# Chia tập giao dịch THEO THỜI GIAN (YYYY-MM)
+val_start: "2023-07"     # train: < 2023-07
+test_start: "2024-07"    # val: 2023-07..2024-06 | test: >= 2024-07
+# Chuỗi giá theo quận: train RNN trên các tháng đích < rnn_train_end
+rnn_train_end: "2024-01"  # val RNN: 2024 | test RNN: >= test_start của chuỗi
+rnn:
+  window: 12
+  units: 32
+  epochs: 80
+  batch_size: 16
+rf_params:
+  n_estimators: 300
+  max_depth: 14
+  min_samples_leaf: 2
+  random_state: 42
+  n_jobs: -1
