@@ -1,0 +1,15 @@
+{
+ "medians": {
+  "area_m2": 75.8,
+  "bedrooms": 3.0,
+  "bathrooms": 2.0,
+  "floors": 2.0,
+  "year_built": 2011.0,
+  "distance_center_km": 6.95
+ },
+ "condition_mode": "Tốt",
+ "log_price_bounds": [
+  0.5269125751483237,
+  3.612445316275838
+ ]
+}
